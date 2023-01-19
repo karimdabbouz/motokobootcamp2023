@@ -1,0 +1,10 @@
+type Book = 
+ record {
+   pages: nat;
+   title: text;
+ };
+service : {
+  add_book: (Book) -> () oneway;
+  expose_second_maximum: (vec int) -> (int);
+  get_books: () -> (vec Book) query;
+}
